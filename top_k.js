@@ -11,6 +11,7 @@ function topKFrequent(nums, k) {
     freq_map.set(nums[i], incFreq);
   }
   //sort this
+  //                  sorting function: sort by value  VVVVVVVVVVVVVVVVVVVVV
   const sorted_freq_map = [...freq_map.entries()].sort((a, b) => b[1] - a[1]);
   //console.log(sorted_freq_map);
   //return first k pairs in map.
